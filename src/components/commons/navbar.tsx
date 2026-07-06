@@ -1,7 +1,6 @@
 import Link from "next/link";
 import React from "react";
 import { Avatar, AvatarFallback } from "@/components/ui/avatar";
-import { Button } from "@/components/ui/button";
 import { Badge } from "@/components/ui/badge";
 
 import {
@@ -23,7 +22,7 @@ const Navbar = () => {
           {/* Logo */}
           <div className="nav-logo">
             <Link href="/" className="flex items-center group">
-              <Avatar className="mr-2.5 bg-gradient-to-br from-slate-800 to-navy-900 bg-[#0f2244] text-white shadow-md shadow-slate-300 ring-2 ring-white transition-transform duration-300 group-hover:scale-105">
+              <Avatar className="mr-2.5 bg-linear-to-br from-slate-800 to-navy-900 bg-[#0f2244] text-white shadow-md shadow-slate-300 ring-2 ring-white transition-transform duration-300 group-hover:scale-105">
                 <AvatarFallback className="bg-transparent font-semibold text-white">
                   S
                 </AvatarFallback>
@@ -45,7 +44,7 @@ const Navbar = () => {
               <Link
                 key={link.href}
                 href={link.href}
-                className="relative text-[15px] font-medium text-slate-600 transition-colors duration-200 hover:text-[#0f2244] after:absolute after:-bottom-1.5 after:left-0 after:h-[2px] after:w-0 after:bg-[#0f2244] after:transition-all after:duration-300 hover:after:w-full"
+                className="relative text-[15px] font-medium text-slate-600 transition-colors duration-200 hover:text-[#0f2244] after:absolute after:-bottom-1.5 after:left-0 after:h-0.5 after:w-0 after:bg-[#0f2244] after:transition-all after:duration-300 hover:after:w-full"
               >
                 {link.label}
               </Link>
