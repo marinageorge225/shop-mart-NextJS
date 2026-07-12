@@ -4,6 +4,7 @@ import "./globals.css";
 import Navbar from "@/components/commons/navbar";
 import Footer from "@/components/commons/footer";
 import { Playfair_Display, Inter } from "next/font/google";
+import { Toaster } from "@/components/ui/sonner";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -42,6 +43,7 @@ export default function RootLayout({
         <Navbar />
         {children}
         <Footer />
+        <Toaster position="top-center" richColors />
       </body>
     </html>
   );
